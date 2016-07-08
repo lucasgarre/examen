@@ -1,7 +1,10 @@
 package FinProject;
 
+<<<<<<< HEAD
 import java.util.Scanner;
 
+=======
+>>>>>>> origin/master
 /**
  * @author <Pon aquí tu nombre>
  * Esta clase es la que se debe utilizar para resolver el Ejercicio 1
@@ -15,6 +18,7 @@ public class Modelo1 {
 	 * @desarrollo12: 1+2+3+4+6+12 = 28, que es mayor que 2*12 = 24
 	 */
 	public String esAbundante (String numero){
+<<<<<<< HEAD
 		int nota;
 		
 		if(nota>= 0 && nota <5){
@@ -33,6 +37,8 @@ public class Modelo1 {
 		}
 		
 		
+=======
+>>>>>>> origin/master
 		// Sustituye este return por tu resultado
 		return "Sin hacer";
 	}
@@ -61,7 +67,10 @@ public class Modelo1 {
 	 * 1,2,5,8 -> No
 	 */
 	public String consecutivos (String[] nums){
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/master
 		// Sustituye este return por tu resultado
 		return "Sin hacer";
 	}

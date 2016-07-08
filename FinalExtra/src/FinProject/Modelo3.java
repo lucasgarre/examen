@@ -1,5 +1,6 @@
 package FinProject;
 
+<<<<<<< HEAD
 import java.sql.*;
 
 /**
@@ -40,6 +41,14 @@ public class Modelo3 {
 	
 	
 	
+=======
+/**
+ * @author <Pon aquí tu nombre>
+ * Esta clase es la que se debe utilizar para resolver el Ejercicio 3
+ */
+public class Modelo3 {
+
+>>>>>>> origin/master
 	/** 
 	 * @param billete es el número premiado
 	 * @param premio es la cantidad premiada
@@ -48,6 +57,7 @@ public class Modelo3 {
 	 * @SQL SELECT * FROM premios WHERE billete=<billete> - para comprobar
 	 */
 	public String setPrize (String billete, String premio){
+<<<<<<< HEAD
 		String error=""; 
 		try {
 			stmt= conexion.createStatement();
@@ -66,11 +76,18 @@ public class Modelo3 {
 		
 		//return "Sin hacer - Guardar";
 	
+=======
+		// Sustituye este return por tu resultado
+		return "Sin hacer - Guardar";
+	}
+
+>>>>>>> origin/master
 	/** 
 	 * @param billete es el número que hay que eliminar de la base de datos
 	 * @return Devuelve "Borrado" si todo ha ido bien y "Número no encontrado" en caso de que el billete no estuviera guardado.
 	 * @SQL DELETE FROM premios WHERE billete=<billete>;
 	 */
+<<<<<<< HEAD
 	public String delPrize(String billete){
 		String error=""; 
 		try {
@@ -85,6 +102,11 @@ public class Modelo3 {
 			error = e.getMessage();
 			System.out.println("--->"+error);
 		}return error;
+=======
+	public String delPrize (String billete){
+		// Sustituye este return por tu resultado
+		return "Sin hacer - Borrar";
+>>>>>>> origin/master
 	}
 	
 	/**
@@ -93,6 +115,7 @@ public class Modelo3 {
 	 * @SQL SELECT premio FROM premios WHERE billete=<billete>;
 	 */
 	public String getPrize (String billete){
+<<<<<<< HEAD
 		String error=""; 
 		try {
 			stmt= conexion.createStatement();
@@ -112,3 +135,9 @@ public class Modelo3 {
 
 
 
+=======
+		// Sustituye este return por tu resultado
+		return "Sin hacer - Comprobar";
+	}
+}
+>>>>>>> origin/master
