@@ -1,5 +1,7 @@
 package FinProject;
 
+import java.util.Scanner;
+
 /**
  * @author <Pon aquí tu nombre>
  * Esta clase es la que se debe utilizar para resolver el Ejercicio 2
@@ -14,6 +16,8 @@ public class Modelo2 {
 	public class Alumno {
 		public String addAsignatura (String titulo, String nota){
 			// Sustituye este return por tu resultado
+			Scanner leer = new Scanner (System.in);
+			System.out.println("Introduzca la nota");
 			
 			return "Sin hacer";
 		}

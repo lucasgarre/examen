@@ -51,13 +51,14 @@ public class Modelo3 {
 		String error=""; 
 		try {
 			stmt= conexion.createStatement();
-			int result = stmt.executeUpdate("INSERT INTO examenjava.PREMIOS VALUES ("  +billete+  ",'" + premio+")" );   //  INSERT INTO TABLA VALUES ()
-		System.out.println("---->"+result);
+			int result = stmt.executeUpdate("INSERT INTO examenjava.PREMIOS VALUES ("  +billete+  "," + premio+")" );   //  INSERT INTO TABLA VALUES ()
+		//System.out.println("----> Guardado");
 		} catch (SQLException e) {
 			// TODO: handle exception
 			error = e.getMessage();
 			System.out.println("--->"+error);
-		}return error;
+		}			
+
 		
 		
 	}
@@ -74,15 +75,15 @@ public class Modelo3 {
 		String error=""; 
 		try {
 			stmt= conexion.createStatement();
-			int result = stmt.executeUpdate("DELETE FROM  examenjava.PREMIOS VALUES ("  +billete+")" );   //  INSERT INTO TABLA VALUES ()
-		System.out.println("---->"+result);
-		} catch (SQLException e) {
+			
+			  
+			int result = stmt.executeUpdate("DELETE billete, premio FROM examenjava.premios WHERE billete= billete " );   //  INSERT INTO TABLA VALUES ()
+		System.out.println("----> Borrado ");
+		} catch (SQLException e)  {
 			// TODO: handle exception
 			error = e.getMessage();
 			System.out.println("--->"+error);
 		}return error;
-		// Sustituye este return por tu resultado
-		//return "Sin hacer - Borrar";
 	}
 	
 	/**
@@ -94,8 +95,8 @@ public class Modelo3 {
 		String error=""; 
 		try {
 			stmt= conexion.createStatement();
-			int result = stmt.executeUpdate("SELECT  FROM  examenjava.PREMIOS VALUES ("+billete+")" );   //  Seleccionamos el premio de la tabla premios
-		System.out.println("---->"+result);
+			int result = stmt.executeUpdate("SELECT premio FROM examenjava.premios WHERE billete=billete" );   //  Seleccionamos el premio de la tabla premios
+		System.out.println("---->:  " +result);
 		} catch (SQLException e) {
 			// TODO: handle exception
 			error = e.getMessage();

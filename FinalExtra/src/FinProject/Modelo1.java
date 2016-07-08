@@ -13,6 +13,8 @@ public class Modelo1 {
 	 * @desarrollo12: 1+2+3+4+6+12 = 28, que es mayor que 2*12 = 24
 	 */
 	public String esAbundante (String numero){
+		
+		
 		// Sustituye este return por tu resultado
 		return "Sin hacer";
 	}
@@ -41,6 +43,7 @@ public class Modelo1 {
 	 * 1,2,5,8 -> No
 	 */
 	public String consecutivos (String[] nums){
+		
 		// Sustituye este return por tu resultado
 		return "Sin hacer";
 	}
