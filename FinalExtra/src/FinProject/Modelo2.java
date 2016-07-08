@@ -1,7 +1,10 @@
 package FinProject;
 
+<<<<<<< HEAD
 import java.util.Scanner;
 
+=======
+>>>>>>> origin/master
 /**
  * @author <Pon aquí tu nombre>
  * Esta clase es la que se debe utilizar para resolver el Ejercicio 2
@@ -16,6 +19,7 @@ public class Modelo2 {
 	public class Alumno {
 		public String addAsignatura (String titulo, String nota){
 			// Sustituye este return por tu resultado
+<<<<<<< HEAD
 			titulo="";
 			nota="";
 			return "" titulo;
@@ -23,6 +27,9 @@ public class Modelo2 {
 			
 			
 			//return "Sin hacer";
+=======
+			return "Sin hacer";
+>>>>>>> origin/master
 		}
 	}
 	
