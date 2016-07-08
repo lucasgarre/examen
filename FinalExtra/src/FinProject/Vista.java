@@ -273,9 +273,13 @@ public class Vista extends JFrame {
 		JButton btnBorrar = new JButton("Borrar");
 		btnBorrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				lblInfo.setText(miModelo3.delPrize(txtBillete.getText()));
+				String billete	= txtBillete.getText();// Recogemos valores de los campos de texto al igual que el Scanner
+				String apellido = lblGetApellido.getText();
+				dtm.addRow(fila);
+				miMod.Insertarsocio(nombre, apellido, Integer.parseInt( numsocio) , dni, Integer.parseInt(telefono));
+				/*lblInfo.setText(miModelo3.delPrize(txtBillete.getText()));
 				txtBillete.setText("");
-				txtPremio.setText("");
+				txtPremio.setText("");*/
 			}
 		});
 		btnBorrar.setBounds(255, 113, 104, 23);
