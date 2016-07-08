@@ -16,10 +16,13 @@ public class Modelo2 {
 	public class Alumno {
 		public String addAsignatura (String titulo, String nota){
 			// Sustituye este return por tu resultado
-			Scanner leer = new Scanner (System.in);
-			System.out.println("Introduzca la nota");
+			titulo="";
+			nota="";
+			return "" titulo;
 			
-			return "Sin hacer";
+			
+			
+			//return "Sin hacer";
 		}
 	}
 	

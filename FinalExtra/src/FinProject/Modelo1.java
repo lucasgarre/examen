@@ -1,5 +1,7 @@
 package FinProject;
 
+import java.util.Scanner;
+
 /**
  * @author <Pon aquí tu nombre>
  * Esta clase es la que se debe utilizar para resolver el Ejercicio 1
@@ -13,6 +15,22 @@ public class Modelo1 {
 	 * @desarrollo12: 1+2+3+4+6+12 = 28, que es mayor que 2*12 = 24
 	 */
 	public String esAbundante (String numero){
+		int nota;
+		
+		if(nota>= 0 && nota <5){
+			System.out.println("Has suspendido");	
+		}
+		else if(nota>=5 && nota < 7){
+			System.out.println("Has aprobado");
+		}
+		else if (nota>=7 && nota<9){
+			System.out.println("Has sacado un notable");
+		}
+		else if (nota>=9 && nota <=10){			
+			System.out.println("Tienes un sobresaliente");
+		}else{
+			System.out.println("Nota no válida");
+		}
 		
 		
 		// Sustituye este return por tu resultado
